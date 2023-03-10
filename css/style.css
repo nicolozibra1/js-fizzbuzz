@@ -26,6 +26,7 @@ header h1{
     width: 85px;
     height: 85px;
     padding: 10px;
+    transition: scale 0.2s;
 }
 .square{
     background-color: white;
@@ -37,9 +38,9 @@ header h1{
     border-radius: 5px;
     font-size: 0.rem;
     font-weight:bolder;
-    transition: scale 0.2s;
+    
 }
-.square:hover{
+.square-box:hover{
     scale: 1.2;
     cursor: pointer;
 }
