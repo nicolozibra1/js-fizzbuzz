@@ -9,7 +9,7 @@
     background-color: white;
 }
 .square-box{
-    width: 140px;
+    width: 100px;
     height: calc(100% / 10);
     background-color: red;
     padding: 10px;
