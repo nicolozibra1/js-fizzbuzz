@@ -10,7 +10,7 @@ for (let i = 1; i <= numSquare; i++){
     if (i % 3 === 0 && i % 5 === 0){
         grid.innerHTML +=
         `<div class="square-box">
-            <div class="square">
+            <div class="square fizz-buzz">
                 ${FizzBuzz}
             </div>
         </div>`;
@@ -20,7 +20,7 @@ for (let i = 1; i <= numSquare; i++){
     else if (i % 3 === 0){
         grid.innerHTML +=
         `<div class="square-box">
-            <div class="square">
+            <div class="square fizz">
                 ${fizz}
             </div>
         </div>`;
@@ -30,13 +30,13 @@ for (let i = 1; i <= numSquare; i++){
     else if (i % 5 === 0){
         grid.innerHTML +=
         `<div class="square-box">
-            <div class="square">
+            <div class="square buzz">
                 ${buzz}
             </div>
         </div>`;
         console.log(buzz);
     }
-    
+
     else{
     grid.innerHTML += 
         `<div class="square-box">

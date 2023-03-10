@@ -20,3 +20,12 @@
     width: 100%;
     height: 100%;
 }
+.fizz-buzz{
+    background-color: blue;
+}
+.fizz{
+    background-color: pink;
+}
+.buzz{
+    background-color: green;
+}
