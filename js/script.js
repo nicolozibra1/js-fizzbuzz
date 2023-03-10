@@ -12,6 +12,8 @@ for (let i = 1; i <= numSquare; i++){
                 ${i}
             </div>
         </div>`;
+        console.log(i);
+
     if (i % 3 === 0 && i % 5 === 0){
         grid.innerHTML +=
         `<div class="square-box">
@@ -19,7 +21,9 @@ for (let i = 1; i <= numSquare; i++){
                 ${FizzBuzz}
             </div>
         </div>`;
+        console.log(FizzBuzz);
     }
+
     else if (i % 3 === 0){
         grid.innerHTML +=
         `<div class="square-box">
@@ -27,7 +31,9 @@ for (let i = 1; i <= numSquare; i++){
                 ${fizz}
             </div>
         </div>`;
+        console.log(fizz);
     }
+    
     else if (i % 5 === 0){
         grid.innerHTML +=
         `<div class="square-box">
@@ -35,7 +41,7 @@ for (let i = 1; i <= numSquare; i++){
                 ${buzz}
             </div>
         </div>`;
+        console.log(buzz);
     }
 
-    console.log(i);
 }
