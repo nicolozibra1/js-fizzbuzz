@@ -87,7 +87,7 @@ h1{
     transition: opacity 1.5s ease 0.5s;
 }
 .wrapper{
-    width: 100%;
+    width: 60%;
     height: calc(100vh - 200px);
     transition: opacity 3s ease 1s;
 }
@@ -127,9 +127,6 @@ h1{
         transform: scale (1);
     }
 }
-.square:nth-child(1){
-    animation-delay: -1.4s;
-}
 .square-box:hover{
     scale: 1.2;
     cursor: pointer;
@@ -142,4 +139,19 @@ h1{
 }
 .buzz{
     background-color: red;
+}
+
+/* RULES */
+.rules{
+    width: 20%;
+    height: 650px;
+    padding: 20px;
+    transition: opacity 1.5s ease 1.5s;
+}
+.rules h1{
+    color: white;
+    font-size: 2rem;
+}
+.rules p{
+    color: white;
 }

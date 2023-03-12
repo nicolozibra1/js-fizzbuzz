@@ -1,19 +1,25 @@
 // PRELOAD
 let preLoad = document.querySelector('.pre-load');
 let start = document.querySelector('.start');
+let header = document.querySelector('.zz-header');
+let main = document.querySelector('main');
 let wrapper = document.querySelector ('.wrapper');
 let title = document.getElementById ('title');
 let secondTitle = document.getElementById ('second-title');
+let rules = document.querySelector ('.rules');
 console.dir(preLoad);
 
 start.addEventListener('click', function() {
     preLoad.classList.add ("d-none");
     start.classList.add ("d-none");
+    main.classList.remove ("d-none");
+    header.classList.remove ("d-none")
     
     setTimeout(function() {
         wrapper.classList.remove ("zz-opacity");
         title.classList.remove ("zz-opacity");
         secondTitle.classList.remove ("zz-opacity");
+        rules.classList.remove ("zz-opacity");
     }, 500);
    
 });
