@@ -142,13 +142,13 @@ h1{
 }
 
 /* RULES */
-.rules{
+.rules, .my-solution{
     width: 20%;
     height: 650px;
-    padding: 20px;
-    transition: opacity 1.5s ease 1.5s;
+    padding: 40px;
+    transition: opacity 1.5s ease 3s;
 }
-.rules h1{
+.rules h1, .my-solution h1{
     color: white;
     font-size: 2rem;
 }
