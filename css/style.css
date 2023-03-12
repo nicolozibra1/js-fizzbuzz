@@ -114,7 +114,21 @@ h1{
     border-radius: 5px;
     font-size: 0.rem;
     font-weight:bolder;
-    
+    animation: animate 1.6s ease-in-out infinite;
+}
+@keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale (1);
+    }
+}
+.square:nth-child(1){
+    animation-delay: -1.4s;
 }
 .square-box:hover{
     scale: 1.2;
