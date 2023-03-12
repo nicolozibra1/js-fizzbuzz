@@ -8,9 +8,13 @@ console.dir(preLoad);
 start.addEventListener('click', function() {
     preLoad.classList.add ("d-none");
     start.classList.add ("d-none");
-    wrapper.classList.remove ("d-none");
-    title.classList.remove ("d-none");
-})
+    
+    setTimeout(function() {
+        wrapper.classList.remove ("zz-opacity");
+        title.classList.remove ("zz-opacity");
+    }, 500);
+   
+});
 
 
 const numSquare = 100;
