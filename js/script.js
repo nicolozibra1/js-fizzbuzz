@@ -1,3 +1,18 @@
+// PRELOAD
+let preLoad = document.querySelector('.pre-load');
+let start = document.querySelector('.start');
+let wrapper = document.querySelector ('.wrapper');
+let title = document.getElementById ('title');
+console.dir(preLoad);
+
+start.addEventListener('click', function() {
+    preLoad.classList.add ("d-none");
+    start.classList.add ("d-none");
+    wrapper.classList.remove ("d-none");
+    title.classList.remove ("d-none");
+})
+
+
 const numSquare = 100;
 
 const grid = document.getElementById('grid');
