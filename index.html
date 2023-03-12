@@ -30,10 +30,10 @@
     <main id="main" class="d-flex justify-content-between justify-content-center d-none">
         <div class="rules d-flex flex-column align-items-center justify-content-center text-center zz-opacity debug">
             <h1 class="pt-5">Regole del gioco</h1>
-            <p class="pt-4">Ciao! Benvenuto al gioco di FizzBuzz! In questa griglia ci sono 100 quadrati, ognuno dei quali può essere di quattro colori diversi: bianco, verde, rosso e giallo.</p>
+            <p class="pt-4">Ciao! Benvenuto al gioco di FizzBuzz! In questa griglia ci sono 100 quadrati, ognuno dei quali può essere di quattro colori diversi: bianco, <span class="text-success">verde</span>, <span class="text-danger">rosso</span> e <span class="text-warning">giallo</span>.</p>
             <p>Il tuo obiettivo è capire perché i quadrati sono colorati in questo modo. Ecco un aiuto:</p>
             <p>la disposizione in cui sono colorati i quadrati è il risultato di un calcolo matematico. </p>
-            <p>Sono stati utilizzati i MULTIPLI e sarai tu a dover scoprire quale multipli sono stati a colorare i quadrati in questa successione!</p>
+            <p>Sono stati utilizzati i <strong>MULTIPLI</strong> e sarai tu a dover scoprire quale multipli sono stati a colorare i quadrati in questa successione!</p>
         </div>
         <div class="wrapper d-flex justify-content-center align-items-center zz-opacity debug">
             <div id="grid" class="d-flex justify-content-center flex-wrap debug">
@@ -42,11 +42,11 @@
         </div>
         <div class="my-solution d-flex flex-column align-items-center justify-content-center text-center zz-opacity debug">
             <h1 class="pt-5">Inserisci la soluzione</h1>
-            <label for="fizz" class="text-white pt-3 pb-1">I quadrati di colore verde sono multipli di:</label>
+            <label for="fizz" class="text-white pt-3 pb-1">I quadrati di colore <span class="text-success">verde</span> sono multipli di:</label>
             <input type="text" name="fizz" placeholder="es. 1">
-            <label for="buzz" class="text-white pt-4 pb-1">I quadrati di colore rosso sono multipli di:</label>
+            <label for="buzz" class="text-white pt-4 pb-1">I quadrati di colore <span class="text-danger">rosso</span> sono multipli di:</label>
             <input type="text" name="buzz" placeholder="es. 2">
-            <label for="fizz-buzz" class="text-white pt-4 pb-1">I quadrati di colore giallo sono multipli di:</label>
+            <label for="fizz-buzz" class="text-white pt-4 pb-1">I quadrati di colore <span class="text-warning">giallo</span> sono multipli di:</label>
             <input type="text" name="fizz-buzz" placeholder="es. 2-4">
             <button id="send-solution" class="bg-black text-white mt-5 p-4">Invia la soluzione</button>
             <div id="result">
