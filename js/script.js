@@ -91,7 +91,8 @@ console.dir(fizzbuzzBox);
 
 
 sendSolution.addEventListener('click', function(){
-    const result = document.getElementById("result");
+    const resultLose = document.getElementById("result-lose");
+    const resultWin = document.getElementById("result-win");
 
     let fizzSolution = fizzBox.value;
     let buzzSolution = buzzBox.value;
@@ -99,11 +100,13 @@ sendSolution.addEventListener('click', function(){
     console.log(fizzSolution);
 
     if (fizzSolution == "3" && buzzSolution == "5" && fizzbuzzSolution =="3-5"){
-        result.innerHTML +=
-        `<h5 class="text-white">Hai vinto!</h5>`
+        grid.classList.toggle("zz-opacity");
+        resultWin.classList.remove("zz-opacity");
+        rules.classList.add ("zz-opacity");
+        mySolution.classList.add ("zz-opacity");
     }
     else{
-        result.innerHTML +=
+        resultLose.innerHTML +=
         `<h5 class="text-danger pt-4">Hai perso!</h5>`
     }
 

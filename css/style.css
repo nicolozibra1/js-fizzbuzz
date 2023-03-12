@@ -7,6 +7,9 @@ font-family: 'Raleway', sans-serif; */
 .zz-opacity{
     opacity: 0;
 }
+.zz-visibility{
+    visibility: hidden;
+}
 
 /* .debug{
     border:1px solid red;
@@ -97,6 +100,7 @@ h1{
     height: 650px;
     padding: 25px 0;
     box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 150px;
+    transition: opacity 1.5s ease 1s;
 }
 .square-box{
     width: 75px;
@@ -146,7 +150,7 @@ h1{
     width: 20%;
     height: 650px;
     padding: 40px;
-    transition: opacity 1.5s ease 2s;
+    transition: opacity 1.5s ease 1.5s;
 }
 .rules h1, .my-solution h1{
     color: white;
@@ -154,4 +158,30 @@ h1{
 }
 .rules p{
     color: white;
+}
+#result-win{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 1.5s ease 2s;
+}
+.winner{
+    margin: auto;
+    color: green;
+    font-size: 10rem;
+    text-transform: uppercase;
+    animation: animate-text 1.6s ease-in-out infinite;
+}
+
+@keyframes animate-text {
+    0% {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale (1);
+    }
 }
