@@ -1,13 +1,76 @@
+
+/* UTILITY */
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Raleway', sans-serif; */
+
 /* .debug{
     border:1px solid red;
 } */
+
 body{
     background-color: black;
+}
+.pre-load{
+    height: 100vh;
+}
+.pre-load h3{
+    font-family: 'Dancing Script', cursive;
+}
+.play{
+    position: relative;
+}
+.ring{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+}
+.ring:hover, .pre-load span:hover{
+    cursor: pointer;
+}
+@keyframes ring {
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px white;
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px red;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px green;
+    }
+}
+.ring::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+}
+.pre-load span{
+    position: absolute;
+    color: white;
+    font-size: 1.5rem;
+    animation: text 1s ease-in-out infinite;
+}
+@keyframes text {
+    50%{
+        color: black;
+    }
+    100%{
+        color: white;
+    }
 }
 header{
     height: 100px;
 }
-header h1{
+h1{
     font-size: 4rem;
     font-family: 'Raleway', sans-serif;
 }
