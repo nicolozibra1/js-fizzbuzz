@@ -23,6 +23,10 @@ start.addEventListener('click', function() {
         rules.classList.remove ("zz-opacity");
         mySolution.classList.remove ("zz-opacity");
     }, 500);
+
+        const audioPlayer = document.getElementById("audio-player");
+        
+        audioPlayer.play();
    
 });
 
