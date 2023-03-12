@@ -144,7 +144,18 @@ h1{
 .buzz{
     background-color: red;
 }
-
+/* AUDIO */
+.box-audio:hover{
+    cursor: pointer;
+    scale: 1.2;
+    transition: scale 0.5s ease-in-out;
+}
+#box-audio-on i{
+    color: green;
+}
+#box-audio-off i{
+    color: red;
+}
 /* RULES */
 .rules, .my-solution{
     width: 20%;
@@ -159,6 +170,8 @@ h1{
 .rules p{
     color: white;
 }
+
+/* SOLUTION */
 #result-win{
     position: absolute;
     top:50%;

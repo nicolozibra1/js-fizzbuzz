@@ -25,9 +25,8 @@ start.addEventListener('click', function() {
     }, 500);
 
         const audioPlayer = document.getElementById("audio-player");
-        
+
         audioPlayer.play();
-   
 });
 
 
@@ -114,4 +113,27 @@ sendSolution.addEventListener('click', function(){
         `<h5 class="text-danger pt-4">Hai perso!</h5>`
     }
 
+})
+
+// AUDIO
+const boxAudioOn = document.getElementById("box-audio-on");
+const boxAudioOff = document.getElementById("box-audio-off");
+const vHigh = document.querySelector(".fa-volume-high")
+const vNone = document.querySelector(".fa-volume-xmark")
+
+boxAudioOn.addEventListener('click', function() {
+    const audioPlayer = document.getElementById("audio-player");
+    audioPlayer.pause();
+    
+    boxAudioOn.classList.toggle("d-none");
+    boxAudioOff.classList.toggle("d-none");
+
+})
+
+boxAudioOff.addEventListener('click', function() {
+    const audioPlayer = document.getElementById("audio-player");
+    audioPlayer.play();
+
+    boxAudioOn.classList.toggle("d-none");
+    boxAudioOff.classList.toggle("d-none");
 })
