@@ -146,7 +146,7 @@ h1{
     width: 20%;
     height: 650px;
     padding: 40px;
-    transition: opacity 1.5s ease 3s;
+    transition: opacity 1.5s ease 2s;
 }
 .rules h1, .my-solution h1{
     color: white;

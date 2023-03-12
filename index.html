@@ -40,15 +40,18 @@
                 <!-- javascript code -->
             </div>
         </div>
-        <div class="my-solution d-flex flex-column align-items-center justify-content-center text-center text-center debug">
+        <div class="my-solution d-flex flex-column align-items-center justify-content-center text-center zz-opacity debug">
             <h1 class="pt-5">Inserisci la soluzione</h1>
             <label for="fizz" class="text-white pt-3 pb-1">I quadrati di colore verde sono multipli di:</label>
             <input type="text" name="fizz" placeholder="es. 1">
             <label for="buzz" class="text-white pt-4 pb-1">I quadrati di colore rosso sono multipli di:</label>
             <input type="text" name="buzz" placeholder="es. 2">
             <label for="fizz-buzz" class="text-white pt-4 pb-1">I quadrati di colore giallo sono multipli di:</label>
-            <input type="text" name="fizz-buzz" placeholder="es. 2 4">
-            <button class="bg-black text-white mt-5 p-4">Invia la soluzione</button>
+            <input type="text" name="fizz-buzz" placeholder="es. 2-4">
+            <button id="send-solution" class="bg-black text-white mt-5 p-4">Invia la soluzione</button>
+            <div id="result">
+
+            </div>
             
         </div>
     </main>

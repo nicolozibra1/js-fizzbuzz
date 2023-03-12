@@ -7,6 +7,7 @@ let wrapper = document.querySelector ('.wrapper');
 let title = document.getElementById ('title');
 let secondTitle = document.getElementById ('second-title');
 let rules = document.querySelector ('.rules');
+let mySolution = document.querySelector ('.my-solution');
 console.dir(preLoad);
 
 start.addEventListener('click', function() {
@@ -20,6 +21,7 @@ start.addEventListener('click', function() {
         title.classList.remove ("zz-opacity");
         secondTitle.classList.remove ("zz-opacity");
         rules.classList.remove ("zz-opacity");
+        mySolution.classList.remove ("zz-opacity");
     }, 500);
    
 });
@@ -75,3 +77,34 @@ for (let i = 1; i <= numSquare; i++){
     }
 
 }
+
+// SOLUTION
+const sendSolution = document.getElementById ("send-solution")
+
+const fizzBox = document.querySelector ('input[name ="fizz"]');
+console.dir(fizzBox);
+const buzzBox = document.querySelector ('input[name ="buzz"]');
+console.dir(buzzBox);
+const fizzbuzzBox = document.querySelector ('input[name ="fizz-buzz"]');
+console.dir(fizzbuzzBox);
+
+
+
+sendSolution.addEventListener('click', function(){
+    const result = document.getElementById("result");
+
+    let fizzSolution = fizzBox.value;
+    let buzzSolution = buzzBox.value;
+    let fizzbuzzSolution = fizzbuzzBox.value;
+    console.log(fizzSolution);
+
+    if (fizzSolution == "3" && buzzSolution == "5" && fizzbuzzSolution =="3-5"){
+        result.innerHTML +=
+        `<h5 class="text-white">Hai vinto!</h5>`
+    }
+    else{
+        result.innerHTML +=
+        `<h5 class="text-danger pt-4">Hai perso!</h5>`
+    }
+
+})
