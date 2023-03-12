@@ -3,6 +3,7 @@ let preLoad = document.querySelector('.pre-load');
 let start = document.querySelector('.start');
 let wrapper = document.querySelector ('.wrapper');
 let title = document.getElementById ('title');
+let secondTitle = document.getElementById ('second-title');
 console.dir(preLoad);
 
 start.addEventListener('click', function() {
@@ -12,6 +13,7 @@ start.addEventListener('click', function() {
     setTimeout(function() {
         wrapper.classList.remove ("zz-opacity");
         title.classList.remove ("zz-opacity");
+        secondTitle.classList.remove ("zz-opacity");
     }, 500);
    
 });
